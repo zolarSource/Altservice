@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сервисный центр Altservice</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="container main-nav__wrapper">
+      <div class="main-nav--desktop">
+        <div class="col-auto">
+          <img src="./img/logo.svg" alt="Ремонтный сервис альтсервис">
+        </div>
+
+          <ul class="main-nav__links main-nav__links--desktop">
+            <li class="main-nav__link-wrapper">
+              <a href="#" class="main-nav__link" data-target="services">Услуги</a>
+            </li>
+            <li class="main-nav__link-wrapper">
+              <a href="#" class="main-nav__link" data-target="about-service">О нас</a>
+            </li>
+            <li class="main-nav__link-wrapper">
+              <a href="#" class="main-nav__link" data-target="our-work">Как мы работаем</a>
+            </li>
+            <li class="main-nav__link-wrapper">
+              <a href="#" class="main-nav__link" data-target="reviews">Отзывы</a>
+            </li>
+            <li class="main-nav__link-wrapper">
+              <a href="#" class="main-nav__link" data-target="contacts">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="main-nav__info">
+            <div class="page-adress main-nav__adress main-nav__adress--desktop">
+              <svg width="23" height="32" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.3037 6.93677C9.08995 6.93677 7.28812 8.75246 7.28812 10.9832C7.28812 13.2139 9.08995 15.0296 11.3037 15.0296C13.5174 15.0296 15.3192 13.2139 15.3192 10.9832C15.3192 8.75246 13.5174 6.93677 11.3037 6.93677ZM11.3037 13.8735C9.72211 13.8735 8.43541 12.5769 8.43541 10.9832C8.43541 9.38948 9.72211 8.09289 11.3037 8.09289C12.8852 8.09289 14.1719 9.38948 14.1719 10.9832C14.1719 12.5769 12.8852 13.8735 11.3037 13.8735Z" fill="#FF5842"/>
+                <path d="M18.9808 3.24697C16.903 1.15323 14.1403 0 11.2021 0C8.26332 0 5.5012 1.15323 3.42344 3.24697C-0.421721 7.12113 -0.89957 14.4105 2.38858 18.8269L11.2021 31.6529L20.0025 18.8448C23.3038 14.4105 22.826 7.12113 18.9808 3.24697ZM19.072 18.169L11.2021 29.6216L3.31961 18.1511C0.337216 14.144 0.764584 7.56104 4.23516 4.06435C6.09607 2.18912 8.57022 1.15612 11.2021 1.15612C13.834 1.15612 16.3082 2.18912 18.1697 4.06435C21.6402 7.56104 22.0676 14.144 19.072 18.169Z" fill="#FF5842"/>
+              </svg>                
+              <address class="page-adress__text">Запорожье, Металлургов 20</address>
+            </div>
+            
+            <div class="main-nav__contacts">
+              <a href="tel:+380633888366" class="page-phone main-nav__phone">+38 063 388 8366</a>
+              <span class="page-timetable main-nav__timetable">Работаем с 10.00 до 18.00</span>
+            </div>
+          </div>
+      </div>
+      <div class="main-nav--mobile">
+        <img src="./img/logo.svg" alt="Ремонтный сервис альтсервис">
+        <div class="main-nav__menu-open" aria-label="кнопка открытия меню">
+          <span class="main-nav__burger-icon"></span>
+        </div>
+
+        <div class="main-nav__content">
+          <ul class="main-nav__links">
+            <li class="main-nav__link-wrapper">
+              <a href="#" class="main-nav__link" data-target="services">Услуги</a>
+            </li>
+            <li class="main-nav__link-wrapper">
+              <a href="#" class="main-nav__link" data-target="about-service">О нас</a>
+            </li>
+            <li class="main-nav__link-wrapper">
+              <a href="#" class="main-nav__link" data-target="our-work">Как мы работаем</a>
+            </li>
+            <li class="main-nav__link-wrapper">
+              <a href="#" class="main-nav__link" data-target="reviews">Отзывы</a>
+            </li>
+            <li class="main-nav__link-wrapper">
+              <a href="#" class="main-nav__link" data-target="contacts">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="main-nav__info row">
+            <div class="page-adress main-nav__adress">
+              <svg width="23" height="32" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.3037 6.93677C9.08995 6.93677 7.28812 8.75246 7.28812 10.9832C7.28812 13.2139 9.08995 15.0296 11.3037 15.0296C13.5174 15.0296 15.3192 13.2139 15.3192 10.9832C15.3192 8.75246 13.5174 6.93677 11.3037 6.93677ZM11.3037 13.8735C9.72211 13.8735 8.43541 12.5769 8.43541 10.9832C8.43541 9.38948 9.72211 8.09289 11.3037 8.09289C12.8852 8.09289 14.1719 9.38948 14.1719 10.9832C14.1719 12.5769 12.8852 13.8735 11.3037 13.8735Z" fill="#FF5842"/>
+                <path d="M18.9808 3.24697C16.903 1.15323 14.1403 0 11.2021 0C8.26332 0 5.5012 1.15323 3.42344 3.24697C-0.421721 7.12113 -0.89957 14.4105 2.38858 18.8269L11.2021 31.6529L20.0025 18.8448C23.3038 14.4105 22.826 7.12113 18.9808 3.24697ZM19.072 18.169L11.2021 29.6216L3.31961 18.1511C0.337216 14.144 0.764584 7.56104 4.23516 4.06435C6.09607 2.18912 8.57022 1.15612 11.2021 1.15612C13.834 1.15612 16.3082 2.18912 18.1697 4.06435C21.6402 7.56104 22.0676 14.144 19.072 18.169Z" fill="#FF5842"/>
+              </svg>                
+              <address class="page-adress__text">Запорожье, Металлургов 20</address>
+            </div>
+            
+            <div class="main-nav__contacts">
+              <a href="tel:+380633888366" class="page-phone main-nav__phone">+38 063 388 8366</a>
+              <span class="page-timetable main-nav__timetable">Работаем с 10.00 до 18.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__main">
+        <div class="header__text col-lg-8">
+          <h1 class="header__title">
+            Ремонт и диагностика гаджетов в Запорожье 
+          </h1>
+
+          <span class="divider"></span>
+
+          <ul class="header__advantages row">
+            <li class="header__advantage col-6 col-sm-4">
+              <p class="header__advantage-title">
+                Cервис <br> в центре города
+              </p>
+            </li>
+            <li class="header__advantage col-6 col-sm-4">
+              <p class="header__advantage-title">
+                Cервис <br> в центре города
+              </p>
+            </li>
+            <li class="header__advantage col-6 col-sm-4">
+              <p class="header__advantage-title">
+                Cервис <br> в центре города
+              </p>
+            </li>
+          </ul>
+
+          <a href="#" class="button button--sign-up header__button">
+            записаться на ремонт
+          </a>
+        </div>
+
+        <div class="header__phone col-lg-4">
+          <img src="./img/header-phone.png" alt="Телефон с разбитым экраном" width="229" height="446">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container main__container">
+      <section class="services" id="services">
+        <h2 class="page-title page-title--center services__title">Услуги</h2>
+        <ul class="services__list row">
+          <li class="services__item col-12 col-sm-6 col-xl-4">
+            <img class="services__item-img" src="img/services-monitor.svg" alt="картинка монитора" width="102" height="90">
+            <h3 class="services__item-title">Ремонт <br> мониторов</h3>
+            <p class="services__item-subtitle">
+              Ремонтируем все марки и модели мониторов:
+              Asus, Acer, Samsung, Nec, lenovo Sony, Lg, Fujitsu, Dell
+            </p>
+            <ul class="services__item-list">
+              <li class="services__item-option">Ремонт блока питания</li>
+              <li class="services__item-option">Ремонт подсветки</li>
+              <li class="services__item-option">Ремонт инверторов</li>
+              <li class="services__item-option">Замена ламп</li>
+              <li class="services__item-option">Замена светодиодных полос</li>
+              <li class="services__item-option">Прошивка модуля управления</li>
+            </ul>
+          </li>
+          <li class="services__item col-12 col-sm-6 col-xl-4">
+            <img class="services__item-img" src="./img/services-pc.svg" alt="картинка компьютера" width="38" height="90">
+            <h3 class="services__item-title">Ремонт <br> компьютеров</h3>
+            <p class="services__item-subtitle">
+              Отремонтируем, модернизируем и настроим ваш персональный компьютер. 
+            </p>
+            <ul class="services__item-list">
+              <li class="services__item-option">замена блока питания</li>
+              <li class="services__item-option">замена вентиляторов</li>
+              <li class="services__item-option">замена памяти</li>
+              <li class="services__item-option">замена жесткого диска (HDD, SSD) </li>
+              <li class="services__item-option">прошивка BIOS </li>
+              <li class="services__item-option">замена разьемов USB </li>
+              <li class="services__item-option">перепайка конденсаторов, северного или южного мостов</li>
+              <li class="services__item-option">сборка и настройка</li>
+            </ul>
+          </li>
+          <li class="services__item col-12 col-sm-6 col-xl-4">
+            <img class="services__item-img" src="./img/services-phone.svg" alt="картинка телефона" width="52" height="90">
+            <h3 class="services__item-title">Ремонт <br> телефонов</h3>
+            <p class="services__item-subtitle">
+              Ремонтируем все марки и модели телефонов:
+              IPhone , Asus, Acer, Samsung, Doogee, Nomi, HomTom, Huawei, Oppo, 
+              Oukitel, Lenovo, Meizu, Xiaomi, Bravis, Prestigio, Sony, LG, Motorola, Nokia, Microsoft, ZTE
+            </p>
+            <ul class="services__item-list">
+              <li class="services__item-option">Замена модуля экрана</li>
+              <li class="services__item-option">Замена Сенсора дисплея</li>
+              <li class="services__item-option">Замена стекла</li>
+              <li class="services__item-option">Замена разъёма Usb</li>
+              <li class="services__item-option">Ремонт после залития </li>
+              <li class="services__item-option">Замена Аккумулятора</li>
+              <li class="services__item-option">Замена флеш памяти</li>
+              <li class="services__item-option">Прошивка и настройка</li>
+            </ul>
+          </li>
+          <li class="services__item col-12 col-sm-6 col-xl-4">
+            <img class="services__item-img" src="./img/services-tablet.svg" alt="картинка планшета" width="66" height="90">
+            <h3 class="services__item-title">Ремонт <br> планшетов</h3>
+            <p class="services__item-subtitle">
+              Ремонтируем все марки и модели планшетов:
+              Apple , Asus, Acer, Samsung, Doogee, Nomi, HomTom, Huawei, Oppo, 
+              Oukitel, Lenovo, Meizu, Xiaomi, Bravis, Prestigio, Sony, LG, Motorola, Nokia, Microsoft, ZTE
+            </p>
+            <ul class="services__item-list">
+              <li class="services__item-option">Замена модуля экрана</li>
+              <li class="services__item-option">Замена Сенсора дисплея</li>
+              <li class="services__item-option">Замена стекла</li>
+              <li class="services__item-option">Замена разъёма Usb</li>
+              <li class="services__item-option">Ремонт после залития </li>
+              <li class="services__item-option">Замена Аккумулятора</li>
+              <li class="services__item-option">Замена флеш памяти</li>
+              <li class="services__item-option">Прошивка и настройка</li>
+            </ul>
+          </li>
+          <li class="services__item col-12 col-sm-6 col-xl-4">
+            <img class="services__item-img" src="./img/services-laptop.svg" alt="картинка ноутбуков" width="90" height="90">
+            <h3 class="services__item-title">Ремонт <br> ноутбуков</h3>
+            <p class="services__item-subtitle">
+              Ремонтируем все марки и модели ноутбуков:
+              Apple, Asus, Acer, Dell, HP, Compaq, Fujitsu, Lenovo, Packard Bell, 
+              MSI, Samsung, ViewSonic Sony, Xiaomi и другие
+            </p>
+            <ul class="services__item-list">
+              <li class="services__item-option">замена блока питания</li>
+              <li class="services__item-option">замена вентиляторов</li>
+              <li class="services__item-option">замена оперативной памяти</li>
+              <li class="services__item-option">Замена матриц</li>
+              <li class="services__item-option">Замена клавиатуры</li>
+              <li class="services__item-option">замена жесткого диска (HDD, SSD) </li>
+              <li class="services__item-option">Замена DVD </li>
+              <li class="services__item-option">прошивка BIOS </li>
+              <li class="services__item-option">замена разьемов USB </li>
+              <li class="services__item-option">северного или южного мостов</li>
+              <li class="services__item-option">Замена видеокарт </li>
+              <li class="services__item-option">Ремонт петель крышки и корпусных элементов</li>
+              <li class="services__item-option">Установка, настройка и оптимизация ОС</li>
+            </ul>
+          </li>
+          <li class="services__item col-12 col-sm-6 col-xl-4">
+            <img class="services__item-img" src="./img/services-tv.svg" alt="картинка телевизора" width="95" height="90">
+            <h3 class="services__item-title">Ремонт <br> телевизоров</h3>
+             <p class="services__item-subtitle">
+              Ремонтируем все марки и модели телевизоров:
+              Samsung Sony, Lg, Sharp, BBK, Saturn и другие
+            </p>
+            <ul class="services__item-list">
+              <li class="services__item-option">Ремонт блока питания</li>
+              <li class="services__item-option">Ремонт подсветки</li>
+              <li class="services__item-option">Замена светодиодов подсветки</li>
+              <li class="services__item-option">Прошивка платы управления</li>
+              <li class="services__item-option">Замена флешки</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about-service" id="about-service">
+        <h2 class="about-service__title page-title">
+          О сервисе
+        </h2>  
+        <div class="about-service__wrapper">
+            <div class="about-service__content">
+              <p class="about-service__text-part">
+                СЦ«Альтсервис» работает в сфере услуг по ремонту цифровой техники с 2000 года  
+              </p>
+              <p class="about-service__text-part">
+                 Мы специализируемся на ремонте и обслуживании компьютеров, ноутбуков, планшетов, смартфонов и тому подобной цифровой техники.
+              </p>
+              <p class="about-service__text-part">
+                 В нашем распоряжении имеется всё необходимое оборудование и квалифицированный персонал для ремонта вашей техники. 
+              </p>
+            </div>
+            <div class="about-service__image">
+              <img src="./img/about-service-img.jpg" alt="фото сервисного центра альтсервис">
+            </div>
+        </div>
+      </section>
+
+      <section class="our-work" id="our-work">
+        <h2 class="our-work__title page-title">
+          Как мы работаем
+        </h2>
+
+        <ul class="our-work__list row">
+          <li class="our-work__item our-work__item--mouse col-md-6 col-lg-4">
+            <h4 class="our-work__item-title">
+              1. Заявка на сайте
+            </h4>
+            <p class="our-work__item-text">
+              Вы оставляете заявку или звоните 
+              по телефону: +38 063 388 8366  
+            </p>
+          </li>
+          <li class="our-work__item our-work__item--phone col-md-6 col-lg-4">
+            <h4 class="our-work__item-title">
+              2. Обратный звонок
+            </h4>
+            <p class="our-work__item-text">
+              Мы перезвоним вам и уточним сроки, цену ремонта
+            </p>
+          </li>
+          <li class="our-work__item our-work__item--give col-md-6 col-lg-4">
+            <h4 class="our-work__item-title">
+              3. Сдача устройства в ремонт
+            </h4>
+            <p class="our-work__item-text">
+              Вы приносите устройство в наш центр 
+              на время которое вы указали в заявке или выбрали по телефону
+            </p>
+          </li>
+          <li class="our-work__item our-work__item--repair col-md-6 col-lg-4">
+            <h4 class="our-work__item-title">
+              4. Начало ремонта
+            </h4>
+            <p class="our-work__item-text">
+              После того, как вы сдали устройство, мы начинаем ремонт
+            </p>
+          </li>
+          <li class="our-work__item our-work__item--take col-md-6 col-lg-4">
+            <h4 class="our-work__item-title">
+              5. Выдача устройства
+            </h4>
+            <p class="our-work__item-text">
+              После завершения ремонта, мы звоним вам и вы забираете ваше устройство
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reviews slider swiper-container" id="reviews">
+        <h2 class="reviews__title page-title page-title--center">
+          Отзывы
+        </h2>
+
+        <button class="review__arrow review__arrow-prev slider__arrow slider__arrow-prev">
+          <img src="./img/slider-arrow.svg" alt="предыдущий отзыв">
+        </button>
+        <ul class="reviews__slider-list slider__list swiper-wrapper">
+          <li class="reviews__item slider__item swiper-slide">
+            <img src="./img/reviews-image-1.jpg" alt="фото автора отзыва" class="reviews__item-image" width="150" height="150">
+            <h3 class="reviews__item-author">
+              Денис Денисович
+            </h3>
+            <p class="reviews__item-text">
+              Ремонтировал ноутбук Asus. Перестал работать разъем питания. Ребята продиагностировали, выявили причину, 
+              и очень быстро все поменяли.теперь прекрасно 
+              работает.  Спасибо за скорость, приятное 
+              обслуживание и качество! Рекомендую.
+            </p>
+          </li>
+          <li class="reviews__item slider__item swiper-slide">
+            <img src="./img/reviews-image-1.jpg" alt="фото автора отзыва" class="reviews__item-image" width="150" height="150">
+            <h3 class="reviews__item-author">
+              Денис Денисович
+            </h3>
+            <p class="reviews__item-text">
+              Ремонтировал ноутбук Asus. Перестал работать разъем питания. Ребята продиагностировали, выявили причину, 
+              и очень быстро все поменяли.теперь прекрасно 
+              работает.  Спасибо за скорость, приятное 
+              обслуживание и качество! Рекомендую.
+            </p>
+          </li>
+        </ul>
+        <button class="review__arrow review__arrow-next slider__arrow slider__arrow-next">
+          <img src="./img/slider-arrow.svg" alt="следующый отзыв">
+        </button>
+
+        <a href="#" class="button reviews__button">
+          оставить отзыв
+        </a>
+      </section>
+    </div>
+
+    <section class="contacts container" id="contacts">
+      <div class="contacts__content">
+        <div class="contacts__content-wrapper">
+          <h2 class="contacts__title">
+            Контакты
+          </h2>
+  
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item-adress">                
+              <address class="page-adress__text">Запорожье, проспект Металлургов 20, <br> остановка в направлении моста Преображенского</address>
+            </li>
+            <li class="contacts__item contacts__item-phone">
+              <a href="tel:+380633888366" class="contacts__phone">+38 063 388 8366</a>
+            </li>
+            <li class="contacts__item contacts__item-time">
+              <span>Работаем с <time>10.00<time> до <time>18.00</time></span>
+            </li>
+          </ul>
+  
+          <a href="#" class="button button--sign-up button--underlined services__button">
+            записаться на ремонт
+          </a>
+        </div>  
+      </div>
+
+      <div class="contacts__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1005.919048050493!2d35.104282013823486!3d47.857418608177824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc66d0214a045b%3A0x34f5dd6bb7295e6!2z0JDQu9GM0YLQodC10YDQstC40YE!5e0!3m2!1sru!2sua!4v1590410195914!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">
+      <img class="footer__copyright-img" src="./img/copyright-icon.svg" alt="знак копирайта">
+      Копирайт
+      altservice 2020 Все права защищены
+    </p>
+  </footer>
+
+  <div class="modal-container">
+    <section class="modal">
+      <button class="modal__close">
+        <img src="./img/close-icon.svg" alt="закрыть окно записи">
+      </button>
+      <h4 class="modal__title">
+        Записаться на ремонт
+      </h4>
+
+      <form class="modal__form">
+        <p class="modal__form-item">
+          <label class="modal__label">
+            Ваше имя
+          </label>
+          <input type="text" class="modal__input modal__input--user" required>
+        </p>
+        <p class="modal__form-item">
+          <label class="modal__label">
+            Телефон
+          </label>
+          <input type="tel" class="modal__input modal__input--phone">
+        </p>
+        <p class="modal__form-item">
+          <label class="modal__label">
+            Модель устройства
+          </label>
+          <input type="tel" class="modal__input" required>
+        </p>
+        <p class="modal__form-item">
+          <label class="modal__label">
+            Опишите неисправность
+          </label>
+          <textarea name="" class="modal__input modal__input--textarea" placeholder="Например: сломался разъем питания" required></textarea>
+        </p>
+
+        <button class="button" type="submit">записаться</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- scripts -->
+  <script src="js/main.js"></script>
+  <script src="libs/swiper/swiper.min.js"></script>
+  <script src="libs/imask/imask.js"></script>
+</body>
+</html>
