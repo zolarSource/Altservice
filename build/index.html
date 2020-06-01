@@ -46,7 +46,7 @@
             </div>
             
             <div class="main-nav__contacts">
-              <a href="tel:+380633888366" class="page-phone main-nav__phone">+38 063 388 8366</a>
+              <a href="tel:+380633888366" class="main-nav__phone">+38 063 388 8366</a>
               <span class="page-timetable main-nav__timetable">Работаем с 10.00 до 18.00</span>
             </div>
           </div>
@@ -86,7 +86,7 @@
             </div>
             
             <div class="main-nav__contacts">
-              <a href="tel:+380633888366" class="page-phone main-nav__phone">+38 063 388 8366</a>
+              <a href="tel:+380633888366" class="main-nav__phone">+38 063 388 8366</a>
               <span class="page-timetable main-nav__timetable">Работаем с 10.00 до 18.00</span>
             </div>
           </div>
@@ -106,17 +106,17 @@
           <span class="divider"></span>
 
           <ul class="header__advantages row">
-            <li class="header__advantage col-6 col-sm-4">
+            <li class="header__advantage col-4">
               <p class="header__advantage-title">
                 Cервис <br> в центре города
               </p>
             </li>
-            <li class="header__advantage col-6 col-sm-4">
+            <li class="header__advantage col-4">
               <p class="header__advantage-title">
                 Cервис <br> в центре города
               </p>
             </li>
-            <li class="header__advantage col-6 col-sm-4">
+            <li class="header__advantage col-4">
               <p class="header__advantage-title">
                 Cервис <br> в центре города
               </p>
@@ -418,33 +418,33 @@
         Записаться на ремонт
       </h4>
 
-      <form class="modal__form">
+      <form class="modal__form" action="functions/mail.php" method="POST">
         <p class="modal__form-item">
           <label class="modal__label">
             Ваше имя
           </label>
-          <input type="text" class="modal__input modal__input--user" required>
+          <input type="text" class="modal__input modal__input--user" name="userName" required>
         </p>
         <p class="modal__form-item">
           <label class="modal__label">
             Телефон
           </label>
-          <input type="tel" class="modal__input modal__input--phone">
+          <input type="tel" class="modal__input modal__input--phone" name="userPhone">
         </p>
         <p class="modal__form-item">
           <label class="modal__label">
             Модель устройства
           </label>
-          <input type="tel" class="modal__input" required>
+          <input type="text" class="modal__input" name="userModel" required>
         </p>
         <p class="modal__form-item">
           <label class="modal__label">
             Опишите неисправность
           </label>
-          <textarea name="" class="modal__input modal__input--textarea" placeholder="Например: сломался разъем питания" required></textarea>
+          <textarea name="" class="modal__input modal__input--textarea" placeholder="Например: сломался разъем питания" name="userBreakage" required></textarea>
         </p>
 
-        <button class="button" type="submit">записаться</button>
+        <button class="button" type="submit">Записаться</button>
       </form>
     </section>
   </div>
