@@ -55,8 +55,18 @@
             </div>
             
             <div class="main-nav__contacts">
-              <a href="tel:+380633888366" class="main-nav__phone">+38 063 388 8366</a>
-              <span class="page-timetable main-nav__timetable">Работаем с 10.00 до 18.00</span>
+              <div class="main-nav__phones-dropdown">
+                <ul class="main-nav__phones-list">
+                  <li class="main-nav__phones-item main-nav__phones-item--active"><a href="tel:+380633888366" class="main-nav__phone">+38 066 3 608 792</a></li>
+                  <li class="main-nav__phones-item"><a href="tel:+380633888366" class="main-nav__phone">+38 063 3 888 366</a></li>
+                  <li class="main-nav__phones-item"><a href="tel:+380633888366" class="main-nav__phone">+38 067 6 888 366</a></li>
+                </ul> 
+
+                <div class="main-nav__phones-arrow">
+                  <img src="img/arrow.svg" alt="Иконка галочки" width="16" height="9">
+                </div>
+              </div>
+              <time class="page-timetable main-nav__timetable">Работаем с 10.00 до 18.00</time>
             </div>
           </div>
       </div>
@@ -95,8 +105,18 @@
             </div>
             
             <div class="main-nav__contacts">
-              <a href="tel:+380633888366" class="main-nav__phone">+38 063 388 8366</a>
-              <span class="page-timetable main-nav__timetable">Работаем с 10.00 до 18.00</span>
+              <div class="main-nav__phones-dropdown">
+                <ul class="main-nav__phones-list">
+                  <li class="main-nav__phones-item main-nav__phones-item--active"><a href="tel:+380633888366" class="main-nav__phone">+38 066 3 608 792</a></li>
+                  <li class="main-nav__phones-item"><a href="tel:+380633888366" class="main-nav__phone">+38 063 3 888 366</a></li>
+                  <li class="main-nav__phones-item"><a href="tel:+380633888366" class="main-nav__phone">+38 067 6 888 366</a></li>
+                </ul> 
+
+                <div class="main-nav__phones-arrow">
+                  <img src="img/arrow.svg" alt="Иконка галочки" width="16" height="9">
+                </div>
+              </div>
+              <time class="page-timetable main-nav__timetable">Работаем с 10.00 до 18.00</time>
             </div>
           </div>
         </div>
@@ -394,7 +414,7 @@
               <a href="tel:+380633888366" class="contacts__phone">+38 063 388 8366</a>
             </li>
             <li class="contacts__item contacts__item-time">
-              <span>Работаем с <time>10.00</time> до <time>18.00</time></span>
+              <time>Работаем с 10.00 до 8.00</time>
             </li>
           </ul>
   
@@ -405,7 +425,15 @@
       </div>
 
       <div class="contacts__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1005.919048050493!2d35.104282013823486!3d47.857418608177824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc66d0214a045b%3A0x34f5dd6bb7295e6!2z0JDQu9GM0YLQodC10YDQstC40YE!5e0!3m2!1sru!2sua!4v1590410195914!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1005.919048050493!2d35.104282013823486!3d47.857418608177824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc66d0214a045b%3A0x34f5dd6bb7295e6!2z0JDQu9GM0YLQodC10YDQstC40YE!5e0!3m2!1sru!2sua!4v1590410195914!5m2!1sru!2sua" 
+          width="100%" 
+          height="100%" 
+          frameborder="0" 
+          style="border:0;" 
+          allowfullscreen="" 
+          aria-hidden="false" 
+          tabindex="0"></iframe>
       </div>
     </section>
   </main>
@@ -451,10 +479,10 @@
             Опишите неисправность
           </label>
           <textarea
-                    class="modal__input modal__input--textarea" 
-                    placeholder="Например: сломался разъем питания" 
-                    name="userBreakage" 
-                    required>
+            class="modal__input modal__input--textarea" 
+            placeholder="Например: сломался разъем питания" 
+            name="userBreakage" 
+            required>
           </textarea>
         </p>
 
